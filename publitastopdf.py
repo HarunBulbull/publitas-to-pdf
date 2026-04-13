@@ -6,7 +6,7 @@ Setup:
     python -m playwright install chromium
 
 Usage:
-    python getBulten.py
+    python publitastopdf.py
 """
 
 import re
