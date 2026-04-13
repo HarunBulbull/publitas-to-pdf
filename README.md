@@ -20,9 +20,9 @@ python -m playwright install chromium
 python publitastopdf.py
 ```
 
-Edit the settings at the top of `getBulten.py` to match your newsletter before running.
+Edit the settings at the top of `publitastopdf.py` to match your newsletter before running.
 
-## Configuration (top of `getBulten.py`)
+## Configuration (top of `publitastopdf.py`)
 
 | Variable | Description |
 |----------|-------------|
