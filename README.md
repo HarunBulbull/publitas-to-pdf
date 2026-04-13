@@ -45,6 +45,3 @@ Edit the settings at the top of `publitastopdf.py` to match your newsletter befo
 - **404 / lower quality:** If a high quality is missing, the script falls back to something like `at600`.
 - **Wrong page count:** `TOTAL_PAGES` and `BASE_URL` must match the real publication structure.
 
-## License
-
-If no license file is included with the project, terms are up to the project owner.
