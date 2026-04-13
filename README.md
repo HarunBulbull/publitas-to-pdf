@@ -17,7 +17,7 @@ python -m playwright install chromium
 ## Usage
 
 ```bash
-python getBulten.py
+python publitastopdf.py
 ```
 
 Edit the settings at the top of `getBulten.py` to match your newsletter before running.
@@ -29,12 +29,12 @@ Edit the settings at the top of `getBulten.py` to match your newsletter before r
 | `BASE_URL` | The Publitas page URL base ending with `page/` (e.g. `.../issue-name/.../page/`). |
 | `TOTAL_PAGES` | Total page count (odd pages are grouped as spreads). |
 | `OUTPUT_PDF` | Output PDF filename. |
-| `QUALITY_CANDIDATES` | Image quality suffixes to try (`at2x`, `at1200`, …); the highest available is chosen. |
+| `QUALITY_CANDIDATES` | Image quality suffixes to try (`at2x`, `at1200`, â€¦); the highest available is chosen. |
 | `DELAY_MS` | Wait after load (ms); increase if images load slowly. |
 
 ## How it works
 
-1. Spread URLs are built (Publitas often shows two pages at once: `1`, `2-3`, `4-5`, …).
+1. Spread URLs are built (Publitas often shows two pages at once: `1`, `2-3`, `4-5`, â€¦).
 2. Each URL is opened in Chromium; image URLs on `view.publitas.com` are collected from network/HTML.
 3. The best available quality tag is detected from the first image; all URLs are upgraded to that quality.
 4. Images are downloaded in order and written to one PDF.
